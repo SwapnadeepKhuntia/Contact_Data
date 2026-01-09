@@ -8,7 +8,7 @@ function AllcontactData() {
     console.log(data);
 
      async function listdata() {
-            axios.get("http://localhost:5033/api/v1/contact/getallcontacts")
+            axios.get("https://contact-data-1-nmsd.onrender.com/api/v1/contact/getallcontacts")
                .then((res)=>{
                  console.log(res);  
                    setData(res.data.contacts); 

@@ -33,7 +33,7 @@ function Contact() {
          return;
        }
 
-       axios.post("http://localhost:5033/api/v1/contact/contactus",userInput)
+       axios.post("https://contact-data-1-nmsd.onrender.com/api/v1/contact/contactus",userInput)
        .then((res)=>{
            console.log(res);
            if(res.data.success){
